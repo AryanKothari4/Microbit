@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Middle & High School Plan (Ages 11–16) | Micro:bit Coding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-accent">micro:bit</span> curriculum
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="elementary.html">Elementary (8–11)</a>
+        <a href="middle.html" class="active">Middle & High (11–16)</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="hero hero-middle">
+    <div class="hero-content">
+      <a href="index.html" class="back-link">← Back to Level Selection</a>
+      <span class="badge-white">Plan B • Ages 11–16</span>
+      <h1>Middle–High School Curriculum</h1>
+      <p>
+        A fast-paced 8-week program for students with prior computer comfort. Extends into 
+        functions, radio networking, and text-based code (JavaScript/Python). Each session runs 60–75 minutes.
+      </p>
+    </div>
+  </section>
+
+  <main class="main-container">
+    <!-- Format Overview Card -->
+    <div class="format-card format-card-purple">
+      <h3>Weekly Session Format (60–75 Minutes)</h3>
+      <div class="format-steps">
+        <div class="format-step">
+          <span class="step-time">5 mins</span>
+          <span class="step-desc">Recap of last week's vocabulary and quick questions</span>
+        </div>
+        <div class="format-step">
+          <span class="step-time">5–10 mins</span>
+          <span class="step-desc">Introduce the day's concept and its real-world use</span>
+        </div>
+        <div class="format-step">
+          <span class="step-time">35–45 mins</span>
+          <span class="step-desc">Hands-on building time following the step-by-step guide</span>
+        </div>
+        <div class="format-step">
+          <span class="step-time">10–15 mins</span>
+          <span class="step-desc">Test, extend, and discuss</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion Section -->
+    <h2 class="section-title">Weekly Lesson Plans</h2>
+    <p class="section-subtitle">Click on any week below to view the detailed lesson plan. Opening a week automatically closes the others.</p>
+
+    <div class="accordion">
+
+      <!-- Week 1 -->
+      <div class="accordion-item">
+        <button class="accordion-header" type="button">
+          <div class="header-left">
+            <span class="week-number week-number-purple">Week 1</span>
+            <span class="week-title">Orientation, Name Badge, and Beating Heart</span>
+          </div>
+          <span class="accordion-indicator">+</span>
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            <div class="detail-section">
+              <h4>Learning Goals</h4>
+              <ul>
+                <li>Get oriented to the micro:bit hardware and the MakeCode editor quickly.</li>
+                <li>Complete two starter projects: a scrolling name badge and an animated beating heart.</li>
+                <li>Begin building a shared vocabulary list to use for the rest of the program.</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Materials Needed</h4>
+              <ul>
+                <li>One computer per student (or pair)</li>
+                <li>One micro:bit board per student (or pair)</li>
+                <li>One USB cable per micro:bit</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Step-by-Step Lesson</h4>
+              <ol>
+                <li>Give a brief tour of the micro:bit board: the 25 LEDs, Buttons A and B, the accelerometer (motion sensor), the light and temperature sensors, the radio antenna, the USB port, and the battery connector.</li>
+                <li>Have students go to makecode.microbit.org and start a new project called "Name Badge."</li>
+                <li>Using the "Basic" category, build a scrolling name badge: place "show string" with your name inside a "forever" block, under "on start."</li>
+                <li>Download and test the badge on the micro:bit.</li>
+                <li>Start a second new project called "Beating Heart." Use two "show leds" heart shapes of different sizes with short pauses between them, all placed inside a "forever" loop, to make an animated heartbeat.</li>
+                <li>Explain the technical definition of a loop as they build it: a loop is a block of instructions that a program repeats, either a set number of times or forever, without the instructions needing to be written out again.</li>
+                <li>Download and test the second project.</li>
+              </ol>
+            </div>
+
+            <div class="challenge-box">
+              <h4>Optional Challenge (for students who finish early)</h4>
+              <p>Have faster-finishing students try a three-frame heartbeat animation, or design their own simple animation from scratch.</p>
+            </div>
+
+            <div class="wrapup-box">
+              <h4>Wrap-Up</h4>
+              <p>Start a running vocabulary list on the board or a shared document: algorithm, loop, variable, condition, sensor, input, output. Add to this list every week.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Week 2 -->
+      <div class="accordion-item">
+        <button class="accordion-header" type="button">
+          <div class="header-left">
+            <span class="week-number week-number-purple">Week 2</span>
+            <span class="week-title">Emotion Badge and Step Counter</span>
+          </div>
+          <span class="accordion-indicator">+</span>
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            <div class="detail-section">
+              <h4>Learning Goals</h4>
+              <ul>
+                <li>Use button inputs to trigger different outputs.</li>
+                <li>Create and update a variable using the accelerometer.</li>
+                <li>Discuss real-world uses of motion sensors.</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Materials Needed</h4>
+              <ul>
+                <li>One computer per student (or pair)</li>
+                <li>One micro:bit board per student (or pair)</li>
+                <li>One USB cable per micro:bit</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Step-by-Step Lesson</h4>
+              <ol>
+                <li>Start a new project called "Emotion Badge." Use "on button A pressed" and "on button B pressed" with two different "show icon" blocks to display two different expressions.</li>
+                <li>Download and test on the micro:bit.</li>
+                <li>Start a new project called "Step Counter." Create a variable called "steps," set it to 0 in "on start," and use "on shake" to add 1 to it and then display it.</li>
+                <li>Discuss why the display block must come after the block that changes the variable, not before, or the count shown will always be out of date by one.</li>
+                <li>Download and test by shaking the micro:bit.</li>
+                <li>Extension: add an "on button B pressed" block that sets "steps" back to 0, so the counter can be reset.</li>
+              </ol>
+            </div>
+
+            <div class="challenge-box">
+              <h4>Optional Challenge (for students who finish early)</h4>
+              <p>Challenge students to add a second variable that tracks the highest step count ever reached in a session, even after a reset.</p>
+            </div>
+
+            <div class="wrapup-box">
+              <h4>Wrap-Up</h4>
+              <p>Discuss where accelerometers are used in everyday devices: phones (to rotate the screen), fitness trackers, cars (airbag sensors), and game controllers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Week 3 -->
+      <div class="accordion-item">
+        <button class="accordion-header" type="button">
+          <div class="header-left">
+            <span class="week-number week-number-purple">Week 3</span>
+            <span class="week-title">Nightlight and an Introduction to Functions</span>
+          </div>
+          <span class="accordion-indicator">+</span>
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            <div class="detail-section">
+              <h4>Learning Goals</h4>
+              <ul>
+                <li>Use the light sensor and conditional logic to build an automatic nightlight.</li>
+                <li>Learn what a function is and why programmers use them to organize code.</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Materials Needed</h4>
+              <ul>
+                <li>One computer per student (or pair)</li>
+                <li>One micro:bit board per student (or pair)</li>
+                <li>One USB cable per micro:bit</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Step-by-Step Lesson</h4>
+              <ol>
+                <li>Start a new project called "Nightlight." Using "light level," a comparison block, and an "if / then / else" block inside a "forever" loop, build the same logic used in the elementary plan's Week 6, but move through the steps more quickly since students already understand "if/then" from Week 2's step counter reset.</li>
+                <li>Test and adjust the light-level number for the room, and download the finished version.</li>
+                <li>Open the "Functions" category (or "Advanced" then "Functions" if it is hidden) and click "Make a Function." Name it something like "turnLightOn."</li>
+                <li>Move the blocks from inside the "then" section of the if/then/else into this new function instead, and replace them with a single block that calls the function.</li>
+                <li>Explain that a function is a named, reusable bundle of instructions — instead of writing the same blocks over and over, you can just call the function by name wherever you need it.</li>
+                <li>Download and retest to confirm the program still works exactly the same after being reorganized into a function.</li>
+              </ol>
+            </div>
+
+            <div class="challenge-box">
+              <h4>Optional Challenge (for students who finish early)</h4>
+              <p>Add a third light condition (a dim, in-between reading) with its own function, using an "else if."</p>
+            </div>
+
+            <div class="wrapup-box">
+              <h4>Wrap-Up</h4>
+              <p>Discuss why keeping code organized into functions matters more as a program gets longer and more complex.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Week 4 -->
+      <div class="accordion-item">
+        <button class="accordion-header" type="button">
+          <div class="header-left">
+            <span class="week-number week-number-purple">Week 4</span>
+            <span class="week-title">Rock, Paper, Scissors with a Computer Opponent</span>
+          </div>
+          <span class="accordion-indicator">+</span>
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            <div class="detail-section">
+              <h4>Learning Goals</h4>
+              <ul>
+                <li>Use randomness to build a game.</li>
+                <li>Extend the basic random-choice game into a program with a scorekeeping opponent, using nested logic.</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Materials Needed</h4>
+              <ul>
+                <li>One computer per student (or pair)</li>
+                <li>One micro:bit board per student (or pair)</li>
+                <li>One USB cable per micro:bit</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Step-by-Step Lesson</h4>
+              <ol>
+                <li>Build the basic Rock, Paper, Scissors program: a variable "choice," set using "pick random 0 to 2" on "on shake," and an if/else if/else block showing rock, paper, or scissors icons.</li>
+                <li>Download and test the basic version.</li>
+                <li>Add two new variables: "wins" and "losses," both starting at 0.</li>
+                <li>Add a second variable, "computerChoice," also set using "pick random 0 to 2" each time the micro:bit is shaken, representing a hidden opponent.</li>
+                <li>Using nested "if / then" blocks, compare "choice" and "computerChoice" to decide the outcome: rock beats scissors, scissors beats paper, and paper beats rock. Add 1 to "wins" or "losses" depending on the result, and briefly show a check mark or X to indicate who won that round.</li>
+                <li>Download and test several rounds, checking that the win/loss variables update correctly.</li>
+              </ol>
+            </div>
+
+            <div class="challenge-box">
+              <h4>Optional Challenge (for students who finish early)</h4>
+              <p>Add a "show number wins" and "show number losses" option triggered by pressing Button A or B, so players can check the score at any time.</p>
+            </div>
+
+            <div class="wrapup-box">
+              <h4>Wrap-Up</h4>
+              <p>Discuss how this project is much closer to a real single-player video game: a hidden computer opponent that also makes a random choice, and rules that decide a winner.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Week 5 -->
+      <div class="accordion-item">
+        <button class="accordion-header" type="button">
+          <div class="header-left">
+            <span class="week-number week-number-purple">Week 5</span>
+            <span class="week-title">Talking Micro:bits — Radio Communication</span>
+          </div>
+          <span class="accordion-indicator">+</span>
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            <div class="detail-section">
+              <h4>Learning Goals</h4>
+              <ul>
+                <li>Understand how micro:bits can send and receive short-range radio messages.</li>
+                <li>Program two micro:bits to communicate with each other.</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Materials Needed</h4>
+              <ul>
+                <li>One computer per pair of students</li>
+                <li>Two micro:bit boards per pair of students (required for radio communication)</li>
+                <li>Two USB cables</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Step-by-Step Lesson</h4>
+              <ol>
+                <li>Explain that micro:bits have a small radio antenna built in, allowing them to send and receive short messages with other nearby micro:bits, similar to a walkie-talkie.</li>
+                <li>Start a new project called "Radio Chat."</li>
+                <li>Open the "Radio" category (it may be under "Advanced") and drag "radio set group" into "on start," setting it to a shared number, such as 1, so only paired micro:bits will hear each other.</li>
+                <li>For the first micro:bit in a pair: under "on button A pressed," add a "radio send number" block set to 1, and also show a checkmark icon so the sender knows a message went out.</li>
+                <li>For the second micro:bit in the pair: use the "on radio received receivedNumber" block, and inside it, place a "show icon" checkmark block.</li>
+                <li>Download the first program to one micro:bit and the second program to the other micro:bit in the pair.</li>
+                <li>Test it: press Button A on the first micro:bit and watch the second micro:bit display a checkmark.</li>
+                <li>Extension: change the blocks to use "radio send string" and "on radio received receivedString" to send a short word or message instead of just a number.</li>
+              </ol>
+            </div>
+
+            <div class="challenge-box">
+              <h4>Optional Challenge (for students who finish early)</h4>
+              <p>Have pairs write a very simple back-and-forth "conversation" where each button press sends a different message and triggers a different icon on the other board.</p>
+            </div>
+
+            <div class="wrapup-box">
+              <h4>Wrap-Up</h4>
+              <p>Discuss other everyday devices that use short-range radio signals, such as garage door openers, car key fobs, and wireless doorbells.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Week 6 -->
+      <div class="accordion-item">
+        <button class="accordion-header" type="button">
+          <div class="header-left">
+            <span class="week-number week-number-purple">Week 6</span>
+            <span class="week-title">From Blocks to Text — Introducing Real Code</span>
+          </div>
+          <span class="accordion-indicator">+</span>
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            <div class="detail-section">
+              <h4>Learning Goals</h4>
+              <ul>
+                <li>See that block code and text-based code (JavaScript or Python) do exactly the same thing.</li>
+                <li>Read and make a small edit directly in text-based code.</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Materials Needed</h4>
+              <ul>
+                <li>One computer per student (or pair)</li>
+                <li>One micro:bit board per student (or pair, optional this week)</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Step-by-Step Lesson</h4>
+              <ol>
+                <li>Open the Rock, Paper, Scissors project (or any earlier project) in MakeCode.</li>
+                <li>Find the toggle near the top of the editor that switches between "Blocks" and "JavaScript" (some versions also offer "Python"). Click it to see the same program written as text.</li>
+                <li>Read through the generated text code as a group, line by line, matching each line back to the block it came from.</li>
+                <li>Explain that this side-by-side view is exactly why a video is not needed here — the connection between blocks and text is visible directly in the editor.</li>
+                <li>Have each student make one small, safe edit directly in the text view, such as changing an icon's name or a number, then switch back to "Blocks" to confirm the change shows up there too.</li>
+                <li>Discuss that professional software is almost always written as text code, and that the blocks are a stepping-stone toward writing text code with the same ideas: variables, loops, conditions, and functions.</li>
+              </ol>
+            </div>
+
+            <div class="challenge-box">
+              <h4>Optional Challenge (for students who finish early)</h4>
+              <p>Let students try switching an entire simple project (like the Name Badge) back and forth between Blocks and text a few times to get comfortable with the toggle.</p>
+            </div>
+
+            <div class="wrapup-box">
+              <h4>Wrap-Up</h4>
+              <p>Quick vocabulary check: ask students to define "syntax" (the exact spelling and punctuation rules of a programming language), "string" (text data), and "integer" (a whole number), in their own words.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Week 7 -->
+      <div class="accordion-item">
+        <button class="accordion-header" type="button">
+          <div class="header-left">
+            <span class="week-number week-number-purple">Week 7</span>
+            <span class="week-title">Final Project — Planning and Building</span>
+          </div>
+          <span class="accordion-indicator">+</span>
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            <div class="detail-section">
+              <h4>Learning Goals</h4>
+              <ul>
+                <li>Design an original micro:bit project that combines at least two inputs and one loop or condition.</li>
+                <li>Practice planning a program on paper before building it.</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Materials Needed</h4>
+              <ul>
+                <li>One computer per student (or pair)</li>
+                <li>One micro:bit board per student (or pair)</li>
+                <li>Paper and pencil for planning</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Step-by-Step Lesson</h4>
+              <ol>
+                <li>As a group, brainstorm possible final project ideas, for example: a dice roller, a digital compass, a reaction-time game, a thermometer display, a quiz-buzzer game, or a simple alarm.</li>
+                <li>Have each student (or pair) choose one idea and write a short plan on paper: what inputs will be used (buttons, shake, light, sound, temperature), what outputs will happen (icons, numbers, sounds), and what loop or condition the program will need.</li>
+                <li>Begin building the project in MakeCode, checking in with the written plan along the way.</li>
+                <li>Encourage testing early and often: download a partial, simple version of the project to the micro:bit before adding more features, to make sure the basics work first.</li>
+                <li>Circulate to help students debug problems, such as blocks in the wrong order or a comparison that never becomes true.</li>
+              </ol>
+            </div>
+
+            <div class="wrapup-box">
+              <h4>Wrap-Up</h4>
+              <p>Have students pair up to briefly explain their plan to a partner and get one piece of feedback before continuing next week.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Week 8 -->
+      <div class="accordion-item">
+        <button class="accordion-header" type="button">
+          <div class="header-left">
+            <span class="week-number week-number-purple">Week 8</span>
+            <span class="week-title">Final Project — Finish, Debug, and Present</span>
+          </div>
+          <span class="accordion-indicator">+</span>
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            <div class="detail-section">
+              <h4>Learning Goals</h4>
+              <ul>
+                <li>Complete and thoroughly test the final project.</li>
+                <li>Practice explaining a technical project clearly to an audience.</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Materials Needed</h4>
+              <ul>
+                <li>One computer per student (or pair)</li>
+                <li>One micro:bit board per student (or pair)</li>
+              </ul>
+            </div>
+
+            <div class="detail-section">
+              <h4>Step-by-Step Lesson</h4>
+              <ol>
+                <li>Give students time to finish building and downloading their final projects.</li>
+                <li>Guide the group through common debugging checks: is the order of the blocks correct, do the variable names match everywhere they're used, and did the download fully finish (the light on the back blinked, then stopped)?</li>
+                <li>Have each student (or pair) prepare a short, 1–2 minute explanation covering: what the project does, which inputs, outputs, and logic it uses, and one thing that was difficult to figure out and how it was solved.</li>
+                <li>Hold a "demo day": have each student or pair present their finished micro:bit project to the rest of the group.</li>
+                <li>Close with a group discussion: what would you like to try next with a micro:bit? Options might include more sensors, a bigger radio-based game between many micro:bits, or writing an entire project directly in Python.</li>
+              </ol>
+            </div>
+
+            <div class="wrapup-box">
+              <h4>Wrap-Up</h4>
+              <p>Ask each student to name one concept from the past 8 weeks (loop, variable, condition, function, radio, sensor) that they now feel confident explaining to someone else.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Micro:bit Coding Program • Middle–High School Curriculum (Ages 11–16)</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
